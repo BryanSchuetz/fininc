@@ -1,2 +1,4 @@
 source "https://rubygems.org"
-gemspec :name => 'uswds-jekyll'
+gem 'github-pages'
+gem 'jekyll-redirect-from'
+gem 'jekyll-sitemap'

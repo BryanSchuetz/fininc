@@ -1,7 +1,7 @@
 {% assign _styles = '' | split: '' %}
 {% assign _site_styles = site.styles %}
 {% unless _site_styles -%}
-  {% assign _uswds_css = '/assets/uswds/css/uswds.min.css' %}
+  {% assign _uswds_css = '/assets/uswds/css/uswds.css' %}
   {% assign _site_styles = '' | split: ''
     | push: _uswds_css %}
 {% endunless %}

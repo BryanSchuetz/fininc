@@ -1,5 +1,40 @@
 title: Finance Inclusive
+timezone: America/New_York
 collections:
   uploads:
     title: Uploads
     output: true
+defaults: 
+- scope:
+    path: ''
+    type: pages
+  values:
+    hero:
+      image: /uploads/hero.jpg
+      callout:
+        alt: "Stay Updated"
+        text: Get our latest updates from the project newsletter
+      button:
+        href: /signup
+        text: Sign Up
+permalink: "/:title"
+gems:
+- jekyll-sitemap
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+excerpt_separator: "<!--more-->"
+email: bryan_schuetz@dai.com
+exclude: 
+- ".gitignore"
+- gulpfile.js
+- package.json
+- browser-sync.js
+- ".jekyll-metadata"
+- node_modules
+description: A project site for the Haiti—Finance Inclusive Project
+baseurl: 
+destination: "./build"
+sass:
+  style: compressed

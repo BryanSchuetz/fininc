@@ -4,6 +4,10 @@
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
+node_modules/
+build/
+.sass-cache/
+.DS_Store
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc

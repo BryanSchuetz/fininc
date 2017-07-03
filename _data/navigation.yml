@@ -10,28 +10,31 @@
 #   links: primary
 #
 primary:
-  - text: Documentation
-    href: /docs/
-  - text: Navigation section
-    links:
-      - text: Demo link A
-        href: /two/a/
-      - text: Demo link B
-        href: /two/b/
-      - text: Demo link C
-        href: /two/c/
-  - text: Referenced section
-    links: footer
-
+  - text: About
+    href: /about
+  # - text: Navigation section
+  #   links:
+  #     - text: Demo link A
+  #       href: /two/a/
+  #     - text: Demo link B
+  #       href: /two/b/
+  #     - text: Demo link C
+  #       href: /two/c/
+  - text: Our Team
+    href: /our-team
+  - text: News
+    href: /news
+  - text: Reports & Resources
+    href: /reports
 secondary: []
 
 footer:
-  - text: Documentation
-    href: /docs/
-  - text: Demo link one
-    href: /one/
-  - text: Demo link two
-    href: /two/
+  # - text: Documentation
+  #   href: /docs/
+  # - text: Demo link one
+  #   href: /one/
+  # - text: Demo link two
+  #   href: /two/
 
 docs:
   - text: Documentation

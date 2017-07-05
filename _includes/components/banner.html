@@ -2,8 +2,8 @@
   <div class="usa-accordion">
     <header class="usa-banner-header">
       <div class="usa-grid usa-banner-inner">
-      <img src="{{ site.baseurl }}/assets/uswds/img/favicons/favicon-57.png" alt="U.S. flag">
-      <p>Switch To: <strong><a href="/fr/">FRENCH</a></strong></p>
+      {% comment %}<img src="{{ site.baseurl }}/assets/uswds/img/favicons/favicon-57.png" alt="U.S. flag">{% endcomment %}
+      <p>{% if page.language == 'en' %}Basculer Vers: <strong><a href="/fr{{ page.url }}">FRENCH</a></strong>{% elsif page.language == 'fr' %}Switch To: <strong><a href="{{ page.url | remove:"/fr" }}">ENGLISH</a></strong>{% endif %}</p>
       </div>
     </header>
   </div>

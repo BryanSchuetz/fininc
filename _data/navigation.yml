@@ -11,6 +11,7 @@
 #
 primary:
   - text: About
+    fr: Sur
     href: /about
   # - text: Navigation section
   #   links:
@@ -21,10 +22,13 @@ primary:
   #     - text: Demo link C
   #       href: /two/c/
   - text: Our Team
+    fr: Notre équipe
     href: /our-team
   - text: News
+    fr: Nouvelles
     href: /news
   - text: Reports & Resources
+    fr: Rapports et ressources
     href: /reports
 secondary: []
 

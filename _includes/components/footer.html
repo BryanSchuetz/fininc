@@ -19,7 +19,7 @@
           {% for _link in footer_links %}
           <li class="usa-width-one-{{ _size }} usa-footer-primary-content">
             <a class="usa-footer-primary-link" href="{{ _link.href | relative_url }}">
-              {{ _link.text }}
+              {% if page.language == 'fr' %}{{ _link.fr }}{% elsif page.language == 'en' %}{{ _link.text }}{% endif %}
             </a>
           </li>
           {% endfor %}
@@ -49,7 +49,7 @@
         {% assign contact_links = site.data.navigation[footer.contact.links] | default: footer.contact.links %}
         {% for _link in contact_links %}
         <a class="usa-link-{{ _link.type | default: 'generic' }}" href="{{ _link.href | relative_url }}">
-          <span>{{ _link.text }}</span>
+          {% if page.language == 'fr' %}<span>{{ _link.fr }}</span>{% elsif page.language == 'en' %}<span>{{ _link.text }}</span>{% endif %}
         </a>
         {% endfor %}
 

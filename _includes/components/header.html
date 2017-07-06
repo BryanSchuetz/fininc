@@ -35,12 +35,12 @@
           <ul id="{{ _section_id }}" class="usa-nav-submenu">
             {% for _link in section_links %}
             <li>
-              <a href="{{ _link.href | relative_url }}">{% if page.language == 'fr' %}{{ _link.fr }}{% elsif page.language == 'en' %}{{ _link.text }}{% endif %}</a>
+              <a href="{% if page.language == 'fr' %}/fr{% endif %}{{ _link.href | relative_url }}">{% if page.language == 'fr' %}{{ _link.fr }}{% elsif page.language == 'en' %}{{ _link.text }}{% endif %}</a>
             </li>
             {% endfor %}
           </ul>
           {% else %}
-          <a class="usa-nav-link{% if _section.href == page.permalink %} usa-current{% endif %}" href="{{ _section.href | relative_url }}">
+          <a class="usa-nav-link{% if page.url contains _section.href %} usa-current{% endif %}" href="{% if page.language == 'fr' %}/fr{% endif %}{{ _section.href | relative_url }}">
             {% if page.language == 'fr' %}<span>{{ _section.fr }}</span>{% elsif page.language == 'en' %}<span>{{ _section.text }}</span>{% endif %}
           </a>
           {% endif %}
